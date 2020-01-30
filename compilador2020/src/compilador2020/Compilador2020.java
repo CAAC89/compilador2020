@@ -9,10 +9,10 @@ import analisisLexico.Lexer;
 import analisisLexico.Token;
 import analisisLexico.TokenType;
 import analisisSintactico.Parser;
-import checker.Program;
+import ast.Program;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import visitor.PrintVisitor;
+import visitor.Checker;
 
 import java.lang.*;
 
@@ -57,7 +57,7 @@ public class Compilador2020 {
 				System.out.println("---");
 				
 				// print out ASTs
-				PrintVisitor printer = new PrintVisitor();
+				Checker printer = new Checker();
 				printer.visit(prog);
 				System.out.println();
                                 } catch (FileNotFoundException e) {

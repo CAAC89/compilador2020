@@ -5,11 +5,54 @@
  */
 package analisisSintactico;
 
+import ast.Block;
+import ast.False;
+import ast.ClassDeclList;
+import ast.IdentifierType;
+import ast.IntArrayType;
+import ast.And;
+import ast.Statement;
+import ast.MainClass;
+import ast.IntegerLiteral;
+import ast.ArrayLookup;
+import ast.Program;
+import ast.Print;
+import ast.BooleanType;
+import ast.Not;
+import ast.IdentifierExp;
+import ast.IntegerType;
+import ast.True;
+import ast.Plus;
+import ast.ArrayAssign;
+import ast.ClassDeclSimple;
+import ast.ClassDecl;
+import ast.Formal;
+import ast.MethodDecl;
+import ast.MethodDeclList;
+import ast.Exp;
+import ast.Assign;
+import ast.Times;
+import ast.LessThan;
+import ast.NewObject;
+import ast.ClassDeclExtends;
+import ast.FormalList;
+import ast.ArrayLength;
+import ast.Type;
+import ast.ExpList;
+import ast.Identifier;
+import ast.Minus;
+import ast.NewArray;
+import ast.Call;
+import ast.This;
+import ast.VarDecl;
+import ast.VarDeclList;
+import ast.StatementList;
+import ast.While;
+import ast.If;
 import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 
-import checker.*;
 import analisisLexico.*;
 
 /**

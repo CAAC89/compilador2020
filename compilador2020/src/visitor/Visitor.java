@@ -9,7 +9,40 @@ package visitor;
  *
  * @author Caili
  */
-import checker.*;
+import ast.Block;
+import ast.False;
+import ast.IdentifierType;
+import ast.IntArrayType;
+import ast.And;
+import ast.MainClass;
+import ast.IntegerLiteral;
+import ast.ArrayLookup;
+import ast.Program;
+import ast.Print;
+import ast.BooleanType;
+import ast.Not;
+import ast.IdentifierExp;
+import ast.True;
+import ast.IntegerType;
+import ast.Plus;
+import ast.ArrayAssign;
+import ast.ClassDeclSimple;
+import ast.Formal;
+import ast.MethodDecl;
+import ast.Assign;
+import ast.Times;
+import ast.NewObject;
+import ast.LessThan;
+import ast.ClassDeclExtends;
+import ast.ArrayLength;
+import ast.Identifier;
+import ast.NewArray;
+import ast.Minus;
+import ast.Call;
+import ast.This;
+import ast.VarDecl;
+import ast.While;
+import ast.If;
 
 public interface  Visitor {
     
